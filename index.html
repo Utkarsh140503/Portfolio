@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Mishra</title>
+    <link rel="icon" href="./assets/images/ut.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://apis.google.com">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Utkarsh Mishra</span>
+                <img src="./assets/images/person.jpg" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+
+        <!-- HOME -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">SOFTWARE ENGINEER</span></h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">As a software engineering student, I am seeking a dynamic and progressive work environment that will challenge my skills and allow me to thrive. Ideally, this environment would foster both personal and professional growth, providing opportunities for learning and development. Ultimately, I hope to contribute my talents to the organization and make a positive impact on its success.</p>
+                        <div data-aos="fade-up" data-aos-delay="600" class="text-">
+                            <a href="#work" class="btn btn-brand me-3 mb-2">Explore My Work</a>
+                            <a href="https://drive.google.com/file/d/1Ha-9HsgIvhNxL595fZrUyxSkZVI8MScr/view?usp=sharing" class="btn btn-brand me-3 mb-2" target="_blank">Download Resume</a>
+                            <div class="d-block d-md-inline">
+                                <a href="mailto:utm1403@gmail.com" class="link-custom">Email: utm1403@gmail.com</a>&emsp;
+                                <a href="tel: +918887854926" class="link-custom">Call: (+91) 888-785-4926</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Source codes of all these projects [are/will be soon] available on my <span class="link-custom"><a href="https://github.com/Utkarsh140503" class="link-custom">GitHub!</a></span></p>
+            </div>
+        </section>        
+        <!-- //HOME -->
+
+        <!-- WORK -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">WORK</h6>
+                        <h1>My Recent Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project1image.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>CloudCart</h4>
+                                <p>Experience the headless transaction with CloudCart Android Application and enjoy. If you are a shop owner or a shopper, CloudCart has something to offer you!</p>
+                                <!-- <a href="#" class="link-custom">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project2image.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>QuizWiz</h4>
+                                <p>Designed and developed keeping in mind the needs of teachers and students, QuizWiz is an excellent and user-friendly Android Application to make the process of creating and giving quiz fun and efficient.</p>
+                                <!-- <a href="#" class="link-custom">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project3image.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>PhilanthroLink</h4>
+                                <p>PhilanthroLink is an Android Application created keeping in mind the challenges faced by NGOs and Volunteers in connecting with each other, to work and build together a better society!</p>
+                                <!-- <a href="#" class="link-custom">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project4image.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Startup Landing Page</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <!-- <a href="#" class="link-custom">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Source codes of all these projects [are/will be soon] available on my <span class="link-custom"><a href="https://github.com/Utkarsh140503" class="link-custom">GitHub!</a></span></p>
+            </div>
+        </section>
+        <!-- //WORK -->
+
+        <!-- ABOUT -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">ABOUT</h6>
+                        <h1>My Education & Experiance</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>MTech Integrated Software Engineering</h4>
+                                    <p class="text-brand mb-2">Vellore Institute of Technology, Chennai (2021 - 2026)</p>
+                                    <p class="mb-0">Ranked 9th in University Category in India.</p>
+                                    <p class="mb-0">CGPA : 9.26</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Higher Secondary Education - I.C.S.E</h4>
+                                    <p class="text-brand mb-2">St. Joseph's College, Prayagraj (2020 - 2021)</p>
+                                    <p class="mb-0">Percentage : 92%</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Secondary Education - I.C.S.E</h4>
+                                    <p class="text-brand mb-2">St. Joseph's College, Prayagraj (2018 - 2019)</p>
+                                    <p class="mb-0">Percentage : 92.2%</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experiance</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Member, Microsoft Innovation Club (Cyber Security Department)</h4>
+                                    <p class="text-brand mb-2">Vellore Institute of Technology, Chennai</p>
+                                    <p class="mb-0">☞ Participated in multiple hackathons and events like 'How Hackers Really Hack'.</p>
+                                    <p class="mb-0">☞ One amongst the 16 members to gets hands on Burp Suite Tool and be a part of Cyber Security
+                                        Department of Microsoft Innovation Club.</p>                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Member, Data Science Club</h4>
+                                    <p class="text-brand mb-2">Vellore Institute of Technology, Chennai</p>
+                                    <p class="mb-0">☞ Headed a team of 3 members for developing Machine Learning Model to detect Hate Speech.
+                                        Planned the development and deployment of the project.</p>
+                                    <p class="mb-0">☞ Managed and recorded the results and outputs of the project.</p>                                  </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Member, TechnoVIT Ambiance Crew</h4>
+                                    <p class="text-brand mb-2">Vellore Institute of Technology, Chennai</p>
+                                    <p class="mb-0">☞ Coordinated with crew members. Designed posters, an annual report, and social media content.</p>
+                                    <p class="mb-0">☞ Assisted other committees in organizing events.</p>                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- //ABOUT -->
+
+        <!-- CONTACT -->
+    <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 pb-4" data-aos="fade-up">
+                    <h6 class="text-brand">CONTACT</h6>
+                    <h1>Let's talk</h1>
+                </div>
+
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                    <form class="row g-lg-3 gy-3" onsubmit="Submit(event)">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group col-12">
+                            <input type="text" class="form-control" placeholder="Enter subject">
+                        </div>
+                        <div class="form-group col-12">
+                            <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="form-group col-12 d-grid">
+                            <button type="submit" class="btn btn-brand">Contact me</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5" id="footer">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© <a href="#" class="fw-bold">UTKARSH MISHRA</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/utkarshmi/"><i class="lab la-linkedin"></i></i></i></a>
+                            <a href="mailto: utm1403@gmail.com"><i class="las la-envelope"></i></i></a>
+                            <a href="https://github.com/Utkarsh140503"><i class="lab la-github"></i></a>
+                            <a href="https://twitter.com/_Utkarsh_M"><i class="lab la-twitter"></i></a>
+                            <a href="https://www.instagram.com/i.utkarsh_/"><i class="lab la-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
+    </div>
+    <!-- //CONTENT WRAPPER -->
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBtXRWVA6N859-F9kaGKsArbG0liKBgfKo",
+            authDomain: "portfolio-5c6e1.firebaseapp.com",
+            databaseURL: "https://portfolio-5c6e1-default-rtdb.firebaseio.com/",
+            projectId: "portfolio-5c6e1",
+            storageBucket: "portfolio-5c6e1.appspot.com",
+            messagingSenderId: "123961081138",
+            appId: "1:123961081138:web:67c9b9978ffa94a3feab2b"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+        const ref = database.ref("messages");
+
+        function Submit(e) {
+            e.preventDefault(); // Prevent the form from submitting normally
+            // Extract data from form fields
+            const name = e.target[0].value;
+            const email = e.target[1].value;
+            const subject = e.target[2].value;
+            const message = e.target[3].value;
+            // saveContactInfo(name, email, subject, message);
+
+            ref.push({
+                name:name,
+                email:email,
+                subject:subject,
+                message:message
+            })
+
+            e.target.reset();
+        }
+    </script>
+</body>
+
+</html>
