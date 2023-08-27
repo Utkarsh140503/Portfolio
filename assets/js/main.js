@@ -16,3 +16,47 @@ AOS.init({
 
 // // Listen for a submit
 // document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+
+const educationSection = document.querySelector('.education-section');
+const experienceSection = document.querySelector('.experience-section');
+const toggleButtons = document.querySelectorAll('.toggle-btn');
+        
+// Set default to Education
+educationSection.style.display = 'block';
+experienceSection.style.display = 'none';
+        
+toggleButtons.forEach(button => {
+  button.addEventListener('click', () => {
+  if (button.getAttribute('data-toggle') === 'education') {
+    educationSection.style.display = 'block';
+    experienceSection.style.display = 'none';
+  } else {
+    educationSection.style.display = 'none';
+    experienceSection.style.display = 'block';
+  }
+
+  toggleButtons.forEach(btn => btn.classList.remove('active'));
+  button.classList.add('active');
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const viewAllButton = document.getElementById("viewAllButton");
+  const popup = document.getElementById("popup");
+  const closeButton = document.getElementById("closeButton");
+
+  viewAllButton.addEventListener("click", function () {
+      popup.style.display = "block";
+  });
+
+  closeButton.addEventListener("click", function () {
+      popup.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+     if (event.target === popup) {
+         popup.style.display = "none";
+      }
+  });
+});

@@ -200,21 +200,28 @@
         <!-- ABOUT -->
         <section id="about" class="full-height px-lg-5">
             <div class="container">
-
+        
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
                         <h6 class="text-brand">ABOUT</h6>
                         <h1>My Education & Experience</h1>
                     </div>
                 </div>
-
+        
                 <div class="row gy-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-secondary toggle-btn active" data-toggle="education">Education</button>
+                            <button class="btn btn-secondary toggle-btn" data-toggle="experience">Experience</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row gy-5 education-section">
+                    <div class="col-lg-12">
+                        <div class="row row-cols-2 gy-4">
 
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
-                        <div class="row gy-4">
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                            <div class="col">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>MTech Integrated Software Engineering</h4>
                                     <p class="text-brand mb-2">Vellore Institute of Technology, Chennai (2021 - 2026)</p>
@@ -223,7 +230,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                            <div class="col">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Higher Secondary Education - I.C.S.E</h4>
                                     <p class="text-brand mb-2">St. Joseph's College, Prayagraj (2020 - 2021)</p>
@@ -231,7 +238,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                            <div class="col">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Secondary Education - I.C.S.E</h4>
                                     <p class="text-brand mb-2">St. Joseph's College, Prayagraj (2018 - 2019)</p>
@@ -240,49 +247,47 @@
                             </div>
 
                         </div>
-
                     </div>
-
-                    <div class="col-lg-6">
-
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
-                        <div class="row gy-4">
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                </div>
+        
+                <div class="row gy-5 experience-section">
+                    <div class="col-lg-12">
+                        <div class="row row-cols-2 gy-4">
+ 
+                            <div class="col">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Member, Microsoft Innovation Club (Cyber Security Department)</h4>
                                     <p class="text-brand mb-2">Aug 2022 - Present</p>
                                     <p class="text-brand mb-2">Vellore Institute of Technology, Chennai</p>
                                     <p class="mb-0">☞ Participated in multiple hackathons and events like 'How Hackers Really Hack'.</p>
-                                    <p class="mb-0">☞ One amongst the 16 members to gets hands on Burp Suite Tool and be a part of Cyber Security
-                                        Department of Microsoft Innovation Club.</p>                                </div>
+                                    <p class="mb-0">☞ One amongst the 16 members to get hands-on Burp Suite Tool and be a part of the Cyber Security Department of Microsoft Innovation Club.</p>
+                                </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                            <div class="col">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Member, Data Science Club</h4>
                                     <p class="text-brand mb-2">Dec 2022 - Present</p>
                                     <p class="text-brand mb-2">Vellore Institute of Technology, Chennai</p>
-                                    <p class="mb-0">☞ Headed a team of 3 members for developing Machine Learning Model to detect Hate Speech.
-                                        Planned the development and deployment of the project.</p>
-                                    <p class="mb-0">☞ Managed and recorded the results and outputs of the project.</p>                                  </div>
+                                    <p class="mb-0">☞ Headed a team of 3 members for developing a Machine Learning Model to detect Hate Speech. Planned the development and deployment of the project.</p>
+                                    <p class="mb-0">☞ Managed and recorded the results and outputs of the project.</p>
+                                </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                            <div class="col">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Member, TechnoVIT Ambiance Crew</h4>
                                     <p class="text-brand mb-2">September 2022</p>
                                     <p class="text-brand mb-2">Vellore Institute of Technology, Chennai</p>
                                     <p class="mb-0">☞ Coordinated with crew members. Designed posters, an annual report, and social media content.</p>
-                                    <p class="mb-0">☞ Assisted other committees in organizing events.</p>                                </div>
+                                    <p class="mb-0">☞ Assisted other committees in organizing events.</p>
+                                </div>
                             </div>
 
                         </div>
-
                     </div>
-
                 </div>
-
+        
             </div>
         </section>
         <!-- //ABOUT -->
@@ -540,62 +545,6 @@
             </div>
         </section>
         <!--//CERTIFICATIONS-->
-
-        <!-- Custom CSS -->
-        <style>
-            /* Updated Custom CSS */
-            .custom-popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 95%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 9999; /* Make sure it's on top */
-            overflow: auto;
-            padding-top: 50px; /* Adjust this value to account for the navbar height */
-        }
-
-        .popup-content {
-            background-color: #000000;
-            border-radius: 20px;
-            margin: 0 auto;
-            padding: 20px;
-            max-width: 90%; /* Adjust as needed */
-        }
-
-        .close-button {
-            color: #ffffff;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        </style>
-
-        <!-- JavaScript -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-            const viewAllButton = document.getElementById("viewAllButton");
-            const popup = document.getElementById("popup");
-            const closeButton = document.getElementById("closeButton");
-
-            viewAllButton.addEventListener("click", function () {
-                popup.style.display = "block";
-            });
-
-            closeButton.addEventListener("click", function () {
-                popup.style.display = "none";
-            });
-
-            window.addEventListener("click", function (event) {
-               if (event.target === popup) {
-                   popup.style.display = "none";
-                }
-            });
-        });
-    </script>
 
     <!-- CONTACT -->
     <section id="contact" class="full-height px-lg-5">
