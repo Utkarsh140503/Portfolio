@@ -22,9 +22,9 @@ const educationSection = document.querySelector('.education-section');
 const experienceSection = document.querySelector('.experience-section');
 const toggleButtons = document.querySelectorAll('.toggle-btn');
         
-// Set default to Education
-educationSection.style.display = 'block';
-experienceSection.style.display = 'none';
+// Set default to Experience
+educationSection.style.display = 'none';
+experienceSection.style.display = 'block';
         
 toggleButtons.forEach(button => {
   button.addEventListener('click', () => {
