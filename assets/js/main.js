@@ -2,7 +2,7 @@ AOS.init();
 // You can also pass an optional settings object
 // below listed default settings
 AOS.init({
-  
+
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 120, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
@@ -21,23 +21,23 @@ AOS.init({
 const educationSection = document.querySelector('.education-section');
 const experienceSection = document.querySelector('.experience-section');
 const toggleButtons = document.querySelectorAll('.toggle-btn');
-        
+
 // Set default to Experience
 educationSection.style.display = 'none';
 experienceSection.style.display = 'block';
-        
+
 toggleButtons.forEach(button => {
   button.addEventListener('click', () => {
-  if (button.getAttribute('data-toggle') === 'education') {
-    educationSection.style.display = 'block';
-    experienceSection.style.display = 'none';
-  } else {
-    educationSection.style.display = 'none';
-    experienceSection.style.display = 'block';
-  }
+    if (button.getAttribute('data-toggle') === 'education') {
+      educationSection.style.display = 'block';
+      experienceSection.style.display = 'none';
+    } else {
+      educationSection.style.display = 'none';
+      experienceSection.style.display = 'block';
+    }
 
-  toggleButtons.forEach(btn => btn.classList.remove('active'));
-  button.classList.add('active');
+    toggleButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
   });
 });
 
@@ -47,16 +47,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeButton = document.getElementById("closeButton");
 
   viewAllButton.addEventListener("click", function () {
-      popup.style.display = "block";
+    popup.style.display = "block";
   });
 
   closeButton.addEventListener("click", function () {
-      popup.style.display = "none";
+    popup.style.display = "none";
   });
 
   window.addEventListener("click", function (event) {
-     if (event.target === popup) {
-         popup.style.display = "none";
-      }
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const viewAllCertButton = document.getElementById("viewAllCertButton");
+  const popupCert = document.getElementById("popupCert");
+  const closeCertButton = document.getElementById("closeCertButton");
+
+  viewAllCertButton.addEventListener("click", function () {
+    popupCert.style.display = "block";
+  });
+
+  closeCertButton.addEventListener("click", function () {
+    popupCert.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === popupCert) {
+      popupCert.style.display = "none";
+    }
   });
 });
