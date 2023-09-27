@@ -32,12 +32,12 @@ toggleButtons.forEach(button => {
   button.addEventListener('click', () => {
     if (button.getAttribute('data-toggle') === 'education') {
       educationSection.style.display = 'block';
-      experienceSection.style.display = 'none';
-      extraSection.style.display = 'none';
+      experienceSection.style.display = 'gone';
+      extraSection.style.display = 'gone';
     } else if(button.getAttribute('data-toggle') === 'experience'){
-      educationSection.style.display = 'none';
+      educationSection.style.display = 'gone';
       experienceSection.style.display = 'block';
-      extraSection.style.display = 'none';
+      extraSection.style.display = 'gone';
     } else {
       educationSection.style.display = 'none';
       experienceSection.style.display = 'none';
