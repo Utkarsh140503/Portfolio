@@ -20,22 +20,29 @@ AOS.init({
 
 const educationSection = document.querySelector('.education-section');
 const experienceSection = document.querySelector('.experience-section');
+const extraSection = document.querySelector('.extra-section');
 const toggleButtons = document.querySelectorAll('.toggle-btn');
 
 // Set default to Experience
-educationSection.style.display = 'none';
 experienceSection.style.display = 'block';
+educationSection.style.display = 'none';
+extraSection.style.display = 'none';
 
 toggleButtons.forEach(button => {
   button.addEventListener('click', () => {
     if (button.getAttribute('data-toggle') === 'education') {
       educationSection.style.display = 'block';
       experienceSection.style.display = 'none';
-    } else {
+      extraSection.style.display = 'none';
+    } else if(button.getAttribute('data-toggle') === 'experience'){
       educationSection.style.display = 'none';
       experienceSection.style.display = 'block';
+      extraSection.style.display = 'none';
+    } else {
+      educationSection.style.display = 'none';
+      experienceSection.style.display = 'none';
+      extraSection.style.display = 'block';
     }
-
     toggleButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
   });
