@@ -87,3 +87,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const viewAllExpButton = document.getElementById("viewAllExperienceButton");
+  const popupExp = document.getElementById("popupExp");
+  const closeExpButton = document.getElementById("closeExpButton");
+
+  viewAllExpButton.addEventListener("click", function () {
+    popupExp.style.display = "block";
+  });
+
+  closeExpButton.addEventListener("click", function () {
+    popupExp.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === popupCert) {
+      popupExp.style.display = "none";
+    }
+  });
+});
