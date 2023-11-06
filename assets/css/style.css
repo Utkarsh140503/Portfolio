@@ -106,6 +106,7 @@ img {
         background: linear-gradient(rgba(3, 14, 16, 0.8), rgba(3, 14, 16, 0.8)), url(../images/sidebar.jpg);
         background-size: cover;
         background-position: center;
+        padding: 20px;
     }
 
     .navbar-brand img {
