@@ -228,6 +228,19 @@ img {
     color: black;
 }
 
+.toggle-btn-patent-awards{
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.toggle-btn-patent-awards.active{
+    background-color: #f0f0f0;
+    color: black;
+}
+
 /* Updated Custom CSS */
 .custom-popup {
     display: none;

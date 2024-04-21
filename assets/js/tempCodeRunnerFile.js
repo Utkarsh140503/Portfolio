@@ -69,39 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const patentSection = document.querySelector('.patent-section');
-  const publicationSection = document.querySelector('.publication-section');
-  const awardSection = document.querySelector('.award-section');
-  const toggleButtons = document.querySelectorAll('.toggle-btn-patent-awards');
-
-  // Set default to Patents
-  patentSection.style.display = 'block';
-  publicationSection.style.display = 'none';
-  awardSection.style.display = 'none';
-
-  toggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      if (button.getAttribute('data-toggle') === 'patent') {
-        patentSection.style.display = 'block';
-        publicationSection.style.display = 'none';
-        awardSection.style.display = 'none';
-      } else if(button.getAttribute('data-toggle') === 'publication'){
-        patentSection.style.display = 'none';
-        publicationSection.style.display = 'block';
-        awardSection.style.display = 'none';
-      } else {
-        patentSection.style.display = 'none';
-        publicationSection.style.display = 'none';
-        awardSection.style.display = 'block';
-      }
-      toggleButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-    });
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
   const viewAllCertButton = document.getElementById("viewAllCertButton");
   const popupCert = document.getElementById("popupCert");
   const closeCertButton = document.getElementById("closeCertButton");
