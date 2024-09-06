@@ -309,3 +309,18 @@ img {
     font-weight: bold;
     cursor: pointer;
 }
+
+.card-custom-content {
+    word-wrap: break-word;
+}
+
+.doi-text {
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    .doi-text {
+        font-size: 14px;
+    }
+}
