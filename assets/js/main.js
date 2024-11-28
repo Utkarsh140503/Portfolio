@@ -122,6 +122,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const viewAllAwardsButton = document.getElementById("viewAllAwardsButton");
+  const popupAwards = document.getElementById("popupAwards");
+  const closeAwardsButton = document.getElementById("closeAwardsButton");
+
+  viewAllAwardsButton.addEventListener("click", function () {
+    popupAwards.style.display = "block";
+  });
+
+  closeAwardsButton.addEventListener("click", function () {
+    popupAwards.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === popupCert) {
+      popupExp.style.display = "none";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const viewAllExpButton = document.getElementById("viewAllExperienceButton");
   const popupExp = document.getElementById("popupExp");
   const closeExpButton = document.getElementById("closeExpButton");
